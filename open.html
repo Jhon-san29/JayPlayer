@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    // If id is link, encode it safely
+    const encoded = encodeURIComponent(id);
+
+    // Deep link
+    window.location.href = "jayentertain://open?id=" + encoded;
+</script>
+<title>Opening...</title>
+</head>
+<body>
+Opening app...
+</body>
+</html>
